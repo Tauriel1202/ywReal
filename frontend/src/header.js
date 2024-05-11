@@ -8,7 +8,7 @@ function Header() {
       </div>
       <h1>Young Women's Website</h1>
       <nav>
-        <p>
+        {/* <p>
           <a href="/">Home</a>
         </p>
         <p>
@@ -19,7 +19,7 @@ function Header() {
         </p>
         <p>
           <a href="/prof">Profile</a>
-        </p>
+        </p> */}
       </nav>
     </header>
   );

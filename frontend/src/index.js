@@ -8,7 +8,8 @@ import Prof from "./prof";
 import Chat from "./chat";
 import Footer from "./footer";
 
-import "./App.css"
+import "./App.css";
+import Done from "./done";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route path="/survey" element={<Survey />} />
           <Route path="/prof" element={<Prof />} />
           <Route path="/chat" element={<Chat />} />
+          <Route path="/done" element={<Done />} />
         </Routes>
       </BrowserRouter>
     </main>
