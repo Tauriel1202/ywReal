@@ -40,7 +40,7 @@ function sendFile(req, res) {
 
 //mongo
 const mongo = require("./mongo.js");
-app.get("/survey", mongo.addAnswer);
+app.post("/survey", mongo.addAnswer);
 
 app.listen(port, (req, res) => {
   console.log(`🎵Listening on Port: ${port}🎵`);
