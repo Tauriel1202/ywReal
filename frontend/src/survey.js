@@ -9,6 +9,14 @@ class Survey extends React.Component {
     };
   }
 
+  getUrl() {
+    let url = "http://localhost:1218";
+    if (!window.location.host.includes("localhost")) {
+      url = window.location.host;
+    }
+    return url;
+  }
+
   add(e) {
     e.preventDefault();
 
@@ -30,7 +38,9 @@ class Survey extends React.Component {
     data["color"] = colorInput.value;
     data["username"] = username;
 
-    axios.post("http://localhost:1218/survey", { data }).then(() => {
+    // axios.post("http://localhost:1218/survey", { data }).then(() => {
+
+    axios.post(`${this.getUrl()}/survey`, { data }).then(() => {
       let a = document.createElement("a");
       a.href = "/done";
       a.click();
