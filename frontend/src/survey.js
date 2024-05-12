@@ -42,7 +42,7 @@ class Survey extends React.Component {
 
     // axios.post("http://localhost:1218/survey", { data }).then(() => {
 
-    axios.post(`/survey`, { data }).then(() => {
+    axios.get(`/survey`, { data }).then(() => {
       let a = document.createElement("a");
       a.href = "/done";
       a.click();
